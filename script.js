@@ -588,10 +588,10 @@ scene.add(planet);
 //Ganti Deskripsi Planet
 const ringTexts = [
   'Piixiie Universe by alfon',//untuk deskripsi planet layer 1
-  "Haiiii mpiiii!!!",//untuk deskripsi planet layer 2
-  "Suka gak kamu sarempiii ?? ♡",//untuk deskripsi planet layer 3
-  "Maaf kalo masih jelekkk aku baru pertama coba bikin buat kau",
-  "MOGA MPIII SAREMPIII SUKAK DAN MOODNYA SENENG WKWK",//untuk deskripsi planet layer 4
+  "HAIII MPIII ♡",//untuk deskripsi planet layer 2
+  "♡♡♡♡♡♡♡♡♡♡♡♡♡",//untuk deskripsi planet layer 3
+  "PIIXIIE",
+  "SLEEPIII",//untuk deskripsi planet layer 4
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
 
@@ -1068,7 +1068,7 @@ function createHintText() {
   canvas.width = canvas.height = canvasSize;
   const context = canvas.getContext('2d');
   const fontSize = 50;
-  const text = 'Happy Girlfriend Day!';
+  const text = 'Made by lunealf only for Piixiie! ♡';
   context.font = `bold ${fontSize}px Arial, sans-serif`;
   context.textAlign = 'center';
   context.textBaseline = 'middle';
