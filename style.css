@@ -48,11 +48,17 @@ body{
     margin-bottom: 20px;
 }
 
-.button a{
+.flower a{
     text-decoration: none;
     font-size: 1rem;
     color: #111;
 }
+.galaxy a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
 
 @media screen and (max-width:574px){
     .greetings{
@@ -65,17 +71,30 @@ body{
         font-size: 1rem;
     }
     
-    .button a{
+    .flower a{
+        font-size: .5rem;
+    }
+    .galaxy a{
         font-size: .5rem;
     }
 }
 
 .description{
-    color: #fbff00;
+    color: #ff5296;
 }
 
 /* Estilo para el botón */
-.button button {
+.flower flower {
+    background-color: pink; /* Fondo amarillo */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer;
+    position: relative; /* Necesario para el resplandor */
+    border-radius: 20px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
+  }
+.galaxy galaxy {
     background-color: pink; /* Fondo amarillo */
     border: none; /* Sin bordes */
     padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
@@ -87,13 +106,13 @@ body{
   }
   
   /* Estilo para el enlace dentro del botón */
-  .button button a {
+  .flower flower a {
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: inherit; /* Hereda el color del texto del botón */
   }
   
   /* Efecto de resplandor al pasar el cursor sobre el botón */
-  .button button:hover {
+  .flower flower:hover {
     background-color: orange; /* Cambia el color de fondo al pasar el mouse a naranja */
     box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Efecto de resplandor amarillo */
   }
