@@ -18,7 +18,6 @@ body {
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
-  align-items: center;
 }
 
 .galaxy a{
