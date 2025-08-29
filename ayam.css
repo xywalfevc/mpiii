@@ -77,7 +77,9 @@ body {
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: "Courier New", monospace;
-  overflow: visible;
+
+  /* ⬇️ perbaikan */
+  overflow-y: auto;    /* biar scroll di dalam kertas */
 }
 .letter p {
   margin-top: -55px;
@@ -105,6 +107,7 @@ body {
   pointer-events: none;
   transform: rotate(-2deg);
 }
+
 
 
 
