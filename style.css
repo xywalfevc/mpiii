@@ -21,7 +21,7 @@ body{
 }
 
 .surat surat {
-    background-color: pink; /* Fondo amarillo */
+    background-color: black; /* Fondo amarillo */
     position: fixed;
     bottom: 30px;   /* jarak dari bawah */
     right: 30px;    /* jarak dari kanan */
