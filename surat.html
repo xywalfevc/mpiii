@@ -48,7 +48,7 @@
     </div>
 
     <!-- 🔊 tombol musik -->
-    <button id="musicButton" disabled>Click here to hear 💗</button>
+    <button id="musicButton" disabled>Click me 💗</button>
     <div id="player"></div>
 
     <!-- 🌸 Script bunga -->
@@ -116,7 +116,7 @@
             onReady: () => {
               const btn = document.getElementById('musicButton');
               btn.disabled = false;
-              btn.innerText = "Click to hear 💗";
+              btn.innerText = "Click me 💗";
             },
             onStateChange: (event) => {
               if (event.data === YT.PlayerState.ENDED) {
@@ -136,3 +136,4 @@
     </script>
   </body>
 </html>
+
