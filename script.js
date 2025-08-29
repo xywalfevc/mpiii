@@ -496,7 +496,7 @@ function createPlanetTexture(size = 512) {
   gradient.addColorStop(0.00, '#f8bbd0');
   gradient.addColorStop(0.12, '#f48fb1');
   gradient.addColorStop(0.22, '#f06292');
-  gradient.addColorStop(0.35, '#0e0006');
+  gradient.addColorStop(0.35, '#ffffff');
   gradient.addColorStop(0.50, '#e1aaff');
   gradient.addColorStop(0.62, '#a259f7');
   gradient.addColorStop(0.75, '#b80049');
@@ -504,7 +504,7 @@ function createPlanetTexture(size = 512) {
   ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, size, size);
 
-  const spotColors = ['#f8bbd0', '#f8bbd0', '#f48fb1', '#f48fb1', '#f06292', '#f06292', '#0e0006', '#e1aaff', '#a259f7', '#b80049'];
+  const spotColors = ['#f8bbd0', '#f8bbd0', '#f48fb1', '#f48fb1', '#f06292', '#f06292', '#ffffff', '#e1aaff', '#a259f7', '#b80049'];
   for (let i = 0; i < 40; i++) {
     const x = Math.random() * size;
     const y = Math.random() * size;
@@ -679,14 +679,14 @@ function createTextRings() {
     ctx.textAlign = 'left';
     ctx.textBaseline = 'alphabetic';
 
-    ctx.shadowColor = '#e0b3ff';
+    ctx.shadowColor = '#b80049';
     ctx.shadowBlur = 18;
-    ctx.lineWidth = 7;
+    ctx.lineWidth = 5;
     ctx.strokeStyle = '#fff';
     ctx.strokeText(fullText, 0, textureHeight * 0.82); 
 
 
-    ctx.shadowColor = '#ffb3de';
+    ctx.shadowColor = '#ff5296';
     ctx.shadowBlur = 24;
     ctx.fillStyle = '#fff';
     ctx.fillText(fullText, 0, textureHeight * 0.84);
