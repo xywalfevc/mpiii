@@ -15,11 +15,12 @@ const message = "Piixiie,\n" +
 "Dengan bodoh,\n" +
 "Luxxalf.\n\n" +
 
-"ajg gw bikin ini 14 jam";;
+"ajg gw bikin ini 14 jam";
 
 function showLetter() {
   document.getElementById("introText").style.opacity = 0;
   document.querySelector(".btn").style.display = "none";
+  document.querySelector(".btn2").style.display = "none"; // kalau ada tombol lain
 
   setTimeout(() => {
     const letterBox = document.getElementById("letterBox");
@@ -31,6 +32,12 @@ function showLetter() {
       if (i < message.length) {
         typedText.innerHTML += message.charAt(i);
         i++;
+
+        // ⬇️ Tambahin ini biar auto scroll
+        typedText.scrollIntoView({ behavior: "smooth", block: "end" });
+        // atau kalau mau full halaman scroll:
+        // window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+
         setTimeout(typeWriter, 30);
       }
     }
@@ -38,4 +45,3 @@ function showLetter() {
     typeWriter();
   }, 600);
 }
-
