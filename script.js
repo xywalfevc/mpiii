@@ -688,7 +688,7 @@ function createTextRings() {
 
     ctx.shadowColor = '#ff5296';
     ctx.shadowBlur = 24;
-    ctx.fillStyle = '#f945ff';
+    ctx.fillStyle = '#ffffff';
     ctx.fillText(fullText, 0, textureHeight * 0.84);
 
     const ringTexture = new THREE.CanvasTexture(textCanvas);
