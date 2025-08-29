@@ -107,6 +107,37 @@ body {
   pointer-events: none;
   transform: rotate(-2deg);
 }
+.flowers-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* biar ga ganggu klik */
+  overflow: hidden;
+  z-index: 1; /* taruh di belakang surat tapi di atas background */
+}
+
+.flower {
+  position: absolute;
+  top: -50px;
+  width: 25px;
+  height: 25px;
+  background: url("https://i.ibb.co/y4PZ1T3/sakura.png") no-repeat center/contain;
+  animation: fall linear forwards;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
 
 
 
