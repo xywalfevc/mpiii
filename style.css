@@ -13,6 +13,41 @@ body{
     background-color: black;
     overflow: hidden;
 }
+
+.surat a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+.surat surat {
+    background-color: pink; /* Fondo amarillo */
+    position: fixed;
+    bottom: 30px;   /* jarak dari bawah */
+    right: 30px;    /* jarak dari kanan */
+    background: pink;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #111;
+    font-size: 0.9rem;
+    z-index: 1000;  /* biar selalu di atas canvas bunga */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+  }
+
+.suart surat a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del botón */
+  }
+
+ .surat surat:hover {
+    background-color: #ff37fd; /* Cambia el color de fondo al pasar el mouse a naranja */
+    box-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink; /* Efecto de resplandor amarillo */
+  }
+
+
 .greetings{
     font-size: 6rem;
     font-weight: 900;
