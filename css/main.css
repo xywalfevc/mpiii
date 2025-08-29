@@ -28,8 +28,8 @@ body {
 
 .galaxy galaxy {
     background-color: pink; /* Fondo amarillo */
-    position: relative;
-    top: 10%; /* atur manual biar pas di putik bunga */
+    position: absolute;
+    top: -10%; /* atur manual biar pas di putik bunga */
     left: 50%;
     transform: translate(-50%, -50%);
     background: pink;
@@ -40,6 +40,8 @@ body {
     font-size: 0.8rem;
     z-index: 200;
     transition: 0.3s;
+    animation: float 2s ease-in-out infinite alternate;
+}
   }
 
 .galaxy galaxy a {
