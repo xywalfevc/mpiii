@@ -1,4 +1,21 @@
-const message = `I don’t even know if you’ll ever read this.\nBut if you do… I just want you to know, I still think about you sometimes.\n\nWe both tried. We both cared. But the universe just never gave us enough space to become “us.”\n\nI just wonder… if we had met at a different point in life, would the ending have been different?\n\nAnyway, I hope you're doing okay, even though we’re not in each other’s lives anymore.`;
+const message = `Piixiie,
+Hari itu, di sebuah map rusuh bernama Salon de Fiesta, takdir kita bertemu tanpa rencana walaupun ada emot T_T. Aku masih ingat kata-katamu — kalau bukan karena pertemuan itu, mungkin Roblox sudah kau tinggalkan. Tapi ternyata semesta punya cara lucu untuk mempertemukan dua jiwa yapper dan kocak.
+
+Sejak hari itu, sudah 32 hari kita saling kenal. Dari sekadar mabar Roblox, sampai kini suara kita saling menyapa lewat Discord di malam-malam panjang. Kita tertawa bersama, kadang diam saat sedih, kadang marah pada dunia, kadang bahagia berlebihan. Hidupmu, Piixiie, adalah campuran nada senang, sedih, tawa, dan tangis — seperti suara ayam yang tak pernah bosan kudengar.
+
+Dan aku, Luxxalf, hanya ingin bilang:
+jangan pernah benci pada dirimu sendiri. Kau terlalu berharga untuk dilukai oleh pikiranmu sendiri. Sayangi dirimu, cintai dirimu lebih dari kemarin, lebih dari sebelumnya, lebih dari yang bisa kubilang dengan kata-kata. Karena buat aku, Piixiie selalu tuan putri yang imut, kuat, dan berhak atas kebahagiaan yang indah.
+
+Tak apa kalau hari-hari tidak selalu mulus. Tak apa kalau kita sekarang jarang main Roblox lagi. Yang penting, senyamanmu saja. Karena yang paling penting adalah kamu tetap bertahan, tetap semangat, dan terus berjalan ke depan.
+
+Dan kalau dunia terasa terlalu berat, ingatlah — aku ada di sini. Aku Luxxalf, akan menemani, mendengar, dan tetap ada, kapan pun kau butuh.
+
+Piixiie, semoga kau selalu mencintai dirimu setulus ayam yang menghargai setiap detik sebelum dipotong.
+
+Dengan bodoh,
+Luxxalf.
+
+ajg gw bikin ini 14 jam`;
 
 function showLetter() {
   document.getElementById("introText").style.opacity = 0;
@@ -21,3 +38,4 @@ function showLetter() {
     typeWriter();
   }, 600);
 }
+
