@@ -5,41 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Surat untuk piii</title>
     <link rel="stylesheet" href="ayam.css" />
+    <style>
+      /* biar player ga keliatan */
+      #player { display: none; }
+
+      /* tombol musik */
+      #musicButton {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        background-color: #ffffff10;
+        color: white;
+        border: 1px solid white;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 9999;
+        font-weight: bold;
+        backdrop-filter: blur(5px);
+      }
+      #musicButton:hover { background-color: #ffffff30; }
+    </style>
   </head>
   <body>
-  <!-- 🌸 Tambahin container bunga di sini -->
-  <div class="flowers-container"></div>
+    <!-- 🌸 container bunga -->
+    <div class="flowers-container"></div>
 
-  <div class="intro" id="introText">
-    hi piii, pilih emoji yang menggambarkan suasana hati kamu sekarang.
-    setelah dipilih, hasilnya gabisa dirubah ya!
-    berbeda pilihan beda hasil :p
-  </div>
+    <div class="intro" id="introText">
+      hi piii, pilih emoji yang menggambarkan suasana hati kamu sekarang.
+      setelah dipilih, hasilnya gabisa dirubah ya!
+      berbeda pilihan beda hasil :p
+    </div>
 
-  <!-- dibungkus biar gampang diatur -->
-  <div class="emoji-buttons">
-    <button class="btn" onclick="showLetter()">❤️</button>
-    <button class="btn2" onclick="showLetter()">😭</button>
-  </div>
+    <div class="emoji-buttons">
+      <button class="btn" onclick="showLetter()">❤️</button>
+      <button class="btn2" onclick="showLetter()">😭</button>
+    </div>
 
-  <div class="letter" id="letterBox">
-    <p id="typedText"></p>
-    <img src="ttd.gif" alt="Signature" class="signature" />
-  </div>
+    <div class="letter" id="letterBox">
+      <p id="typedText"></p>
+      <img src="ttd.gif" alt="Signature" class="signature" />
+    </div>
 
-  <script src="ayam.js"></script>
-  <!-- 🌸 Script bunga -->
-  <script>
-    function createFlower() {
-      const flower = document.createElement("div");
-      flower.classList.add("flower");
-      flower.style.left = Math.random() * 100 + "vw";
-      flower.style.animationDuration = (5 + Math.random() * 5) + "s";
-      document.querySelector(".flowers-container").appendChild(flower);
-      setTimeout(() => flower.remove(), 10000);
-    }
-    setInterval(createFlower, 800);
-  </script>
-</body>
+    <!-- 🔊 tombol musik -->
+    <button id="musicButton" disabled>Click here to hear 💗</button>
+    <div id="player"></div>
+
+    <!-- 🌸 Script bunga -->
+    <script>
+      function createFlower() {
+        const flower = document.createElement("div");
+        flower.classList.add("flower");
+        flower.style.left = Math.random() * 100 + "vw";
+        flower.style.animationDuration = (5 + Math.random() * 5) + "s";
+        document.querySelector(".flowers-container").appendChild(flower);
+        setTimeout(() => flower.remove(), 10000);
+      }
+      setInterval(createFlower, 800);
+    </script>
+
+    <!-- ✍️ Script surat typewriter -->
+    <script>
+      const message = "Piixiie,\nHari itu, di sebuah map rusuh bernama Salon de Fiesta, takdir kita bertemu ...\n\n(DST isi suratmu)\n\nDengan bodoh,\nLuxxalf.\n\najg gw bikin ini 14 jam";
+
+      function showLetter() {
+        document.getElementById("introText").style.opacity = 0;
+        document.querySelector(".btn").style.display = "none";
+        document.querySelector(".btn2").style.display = "none";
+
+        setTimeout(() => {
+          const letterBox = document.getElementById("letterBox");
+          const typedText = document.getElementById("typedText");
+          letterBox.style.display = "block";
+          let i = 0;
+
+          function typeWriter() {
+            if (i < message.length) {
+              typedText.innerHTML += message.charAt(i);
+              i++;
+              letterBox.scrollTop = letterBox.scrollHeight; // auto scroll isi surat
+              setTimeout(typeWriter, 30);
+            }
+          }
+          typeWriter();
+        }, 600);
+      }
+    </script>
+
+    <!-- 🎵 Script musik -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+      let player;
+      const startTime = 42;   // mulai 0:42
+      const endTime = 251;    // selesai 4:11
+
+      window.onYouTubeIframeAPIReady = function() {
+        player = new YT.Player('player', {
+          height: '0',
+          width: '0',
+          videoId: 'Z6kAi9mNqd8',
+          playerVars: {
+            autoplay: 0,
+            start: startTime,
+            end: endTime,
+            controls: 0,
+            loop: 1,
+            playlist: 'Z6kAi9mNqd8'
+          },
+          events: {
+            onReady: () => {
+              const btn = document.getElementById('musicButton');
+              btn.disabled = false;
+              btn.innerText = "Click to hear 💗";
+            },
+            onStateChange: (event) => {
+              if (event.data === YT.PlayerState.ENDED) {
+                player.seekTo(startTime);
+              }
+            }
+          }
+        });
+      };
+
+      document.getElementById('musicButton').addEventListener('click', () => {
+        if (player) {
+          player.playVideo();
+          document.getElementById('musicButton').style.display = 'none';
+        }
+      });
+    </script>
+  </body>
 </html>
-
