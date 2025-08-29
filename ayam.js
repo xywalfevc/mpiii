@@ -34,7 +34,9 @@ function showLetter() {
         i++;
 
         // ⬇️ Tambahin ini biar auto scroll
-        typedText.scrollIntoView({ behavior: "smooth", block: "end" });
+        const letterBox = document.getElementById("letterBox");
+        letterBox.scrollTop = letterBox.scrollHeight;
+
         // atau kalau mau full halaman scroll:
         // window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 
@@ -45,3 +47,4 @@ function showLetter() {
     typeWriter();
   }, 600);
 }
+
