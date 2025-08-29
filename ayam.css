@@ -21,6 +21,12 @@ body {
   opacity: 1;
   transition: opacity 1s ease;
 }
+.emoji-buttons {
+  display: flex;
+  justify-content: center;   /* tombol di tengah */
+  gap: 20px;                 /* jarak antar tombol */
+  margin-top: 30px;          /* jarak dari teks intro */
+}
 .btn {
   padding: 15px 25px;
   font-size: 2rem;
@@ -99,5 +105,6 @@ body {
   pointer-events: none;
   transform: rotate(-2deg);
 }
+
 
 
