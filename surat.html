@@ -3,27 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>A Letter for You</title>
+    <title>Surat untuk piii</title>
     <link rel="stylesheet" href="ayam.css" />
   </head>
   <body>
-    <div class="intro" id="introText">
-      hi piii, pilih emoji yang menggambarkan suasana hati kamu sekarang.
-      setelah dipilih, hasilnya gabisa dirubah ya!
-      berbeda pilihan beda hasil :p
-    </div>
+  <!-- 🌸 Tambahin container bunga di sini -->
+  <div class="flowers-container"></div>
 
-    <!-- dibungkus biar gampang diatur -->
-    <div class="emoji-buttons">
-      <button class="btn" onclick="showLetter()">❤️</button>
-      <button class="btn2" onclick="showLetter()">😭</button>
-    </div>
+  <div class="intro" id="introText">
+    hi piii, pilih emoji yang menggambarkan suasana hati kamu sekarang.
+    setelah dipilih, hasilnya gabisa dirubah ya!
+    berbeda pilihan beda hasil :p
+  </div>
 
-    <div class="letter" id="letterBox">
-      <p id="typedText"></p>
-      <img src="ttd.gif" alt="Signature" class="signature" />
-    </div>
+  <!-- dibungkus biar gampang diatur -->
+  <div class="emoji-buttons">
+    <button class="btn" onclick="showLetter()">❤️</button>
+    <button class="btn2" onclick="showLetter()">😭</button>
+  </div>
 
-    <script src="ayam.js"></script>
-  </body>
+  <div class="letter" id="letterBox">
+    <p id="typedText"></p>
+    <img src="ttd.gif" alt="Signature" class="signature" />
+  </div>
+
+  <script src="ayam.js"></script>
+  <!-- 🌸 Script bunga -->
+  <script>
+    function createFlower() {
+      const flower = document.createElement("div");
+      flower.classList.add("flower");
+      flower.style.left = Math.random() * 100 + "vw";
+      flower.style.animationDuration = (5 + Math.random() * 5) + "s";
+      document.querySelector(".flowers-container").appendChild(flower);
+      setTimeout(() => flower.remove(), 10000);
+    }
+    setInterval(createFlower, 800);
+  </script>
+</body>
 </html>
+
