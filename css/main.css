@@ -29,7 +29,6 @@ body {
 .galaxy galaxy {
     background-color: pink; /* Fondo amarillo */
     border: none; /* Sin bordes */
-    padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
     font-size: 14px; /* Tamaño de fuente */
     cursor: pointer;
     position: center; /* Necesario para el resplandor */
