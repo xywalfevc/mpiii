@@ -28,19 +28,18 @@ body {
 
 .galaxy galaxy {
     background-color: pink; /* Fondo amarillo */
-    position: relative;
-    top: -10%; /* atur manual biar pas di putik bunga */
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    bottom: 30px;   /* jarak dari bawah */
+    right: 30px;    /* jarak dari kanan */
     background: pink;
-    padding: 6px 12px;
-    border-radius: 20px;
+    padding: 12px 20px;
+    border-radius: 30px;
     text-decoration: none;
     color: #111;
-    font-size: 0.8rem;
-    z-index: 200;
-    transition: 0.3s;
-    animation: rotate;
+    font-size: 0.9rem;
+    z-index: 1000;  /* biar selalu di atas canvas bunga */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
   }
 
