@@ -682,7 +682,7 @@ function createTextRings() {
     ctx.shadowColor = '#b80049';
     ctx.shadowBlur = 18;
     ctx.lineWidth = 5;
-    ctx.strokeStyle = '#f945ff';
+    ctx.strokeStyle = '#000000';
     ctx.strokeText(fullText, 0, textureHeight * 0.82); 
 
 
