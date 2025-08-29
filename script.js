@@ -499,12 +499,12 @@ function createPlanetTexture(size = 512) {
   gradient.addColorStop(0.35, '#ffffff');
   gradient.addColorStop(0.50, '#e1aaff');
   gradient.addColorStop(0.62, '#a259f7');
-  gradient.addColorStop(0.75, '#b2ff59');
+  gradient.addColorStop(0.75, '#b80049');
   gradient.addColorStop(1.00, '#3fd8c7');
   ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, size, size);
 
-  const spotColors = ['#f8bbd0', '#f8bbd0', '#f48fb1', '#f48fb1', '#f06292', '#f06292', '#ffffff', '#e1aaff', '#a259f7', '#b2ff59'];
+  const spotColors = ['#f8bbd0', '#f8bbd0', '#f48fb1', '#f48fb1', '#f06292', '#f06292', '#ffffff', '#e1aaff', '#a259f7', '#b80049'];
   for (let i = 0; i < 40; i++) {
     const x = Math.random() * size;
     const y = Math.random() * size;
