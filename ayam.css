@@ -99,9 +99,9 @@ body {
   pointer-events: none;
 }
 .signature {
-  position: absolute;
-  bottom: -20px;
-  right: 6px;
+  position: fixed;      /* ⬅️ sebelumnya absolute */
+  bottom: 20px;         /* jarak dari bawah layar */
+  right: 20px;          /* jarak dari kanan layar */
   width: 180px;
   opacity: 0.9;
   pointer-events: none;
