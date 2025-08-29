@@ -1,4 +1,5 @@
-const message = "Piixiie,\n" +
+const message = 
+"Piixiie,\n" +
 "Hari itu, di sebuah map rusuh bernama Salon de Fiesta, takdir kita bertemu tanpa rencana walaupun ada emot T_T. Aku masih ingat kata-katamu — kalau bukan karena pertemuan itu, mungkin Roblox sudah kau tinggalkan. Tapi ternyata semesta punya cara lucu untuk mempertemukan dua jiwa yapper dan kocak.\n\n" +
 
 "Sejak hari itu, sudah 32 hari kita saling kenal. Dari sekadar mabar Roblox, sampai kini suara kita saling menyapa lewat Discord di malam-malam panjang. Kita tertawa bersama, kadang diam saat sedih, kadang marah pada dunia, kadang bahagia berlebihan. Hidupmu, Piixiie, adalah campuran nada senang, sedih, tawa, dan tangis — seperti suara ayam yang tak pernah bosan kudengar.\n\n" +
@@ -16,6 +17,7 @@ const message = "Piixiie,\n" +
 "Luxxalf.\n\n" +
 
 "ajg gw bikin ini 14 jam";
+
 
 function showLetter() {
   document.getElementById("introText").style.opacity = 0;
@@ -47,4 +49,5 @@ function showLetter() {
     typeWriter();
   }, 600);
 }
+
 
